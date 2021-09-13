@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: learn-devops-clusterip-service
   labels:
-    app: learn-devops2
+    app: python-app
 spec:
   type: ClusterIP
   selector:
