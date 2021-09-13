@@ -14,21 +14,12 @@ spec:
     spec:
       containers:
       - name: my-python-app
-        image: akdevopscoaching/mypython-app
+        image: oyedemilade/mypython-app
         imagePullPolicy: Always
         ports:
-        - containerPort: 5000
-# service type loadbalancer       
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: python-app-svc
-spec:
-  selector:
-    app: python-app
-  ports:
-    - protocol: TCP
-      port: 5000
-      targetPort: 5000
-  type: LoadBalancer
+        - containerPort: 8080
+      imagePullSecrets:   # Update Image Pull Secret Name we creted
+        - name: dterraform-secret
+# To schedule pods on based on NodeSelectors
+      nodeSelector:
+        app: system-apps
