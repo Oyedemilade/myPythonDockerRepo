@@ -15,7 +15,7 @@ spec:
       containers:
       - name: my-python-app
         image: oyedemilade/mypython-app:tagname
-        imagePullPolicy: IfNotPresent # Always
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
       imagePullSecrets:   # Update Image Pull Secret Name we creted
