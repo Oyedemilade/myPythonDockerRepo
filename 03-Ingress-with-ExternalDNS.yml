@@ -11,7 +11,7 @@ spec:
   - host: wassupafrica.com
     http:
       paths:
-      - path: /app
+      - path: /python
         backend:
           serviceName: learn-devops-clusterip-service
           servicePort: 8080
