@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-python-app
-        image: oyedemilade/mypython-app
+        image: oyedemilade/mypython-app:tagname
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
