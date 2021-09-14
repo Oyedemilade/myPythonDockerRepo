@@ -18,8 +18,6 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
-      imagePullSecrets:   # Update Image Pull Secret Name we creted
-        - name: dterraform-secret
 # To schedule pods on based on NodeSelectors
       nodeSelector:
         app: system-apps
