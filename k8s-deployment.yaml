@@ -18,6 +18,4 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
-# To schedule pods on based on NodeSelectors
-      nodeSelector:
-        app: system-apps
+
