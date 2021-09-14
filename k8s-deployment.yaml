@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-python-app
-        image: oyedemilade/mypython-app:tagname
+        image: dterraform.azurecr.io/app3/python-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
